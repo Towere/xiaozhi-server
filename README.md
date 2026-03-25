@@ -18,7 +18,7 @@
 
 **xiaozhi-server** 是小智ESP32智能硬件的核心后端服务，采用 Python 异步架构实现，为智能语音交互提供完整的后端能力。
 
-本服务是 [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server) 项目的核心组件，由华南理工大学刘思源教授团队研发。
+本服务是 [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server) 项目的核心组件。
 
 ---
 
@@ -456,14 +456,3 @@ VAD:
 MIT License
 
 ---
-
-## 鸣谢
-
-由华南理工大学刘思源教授团队研发。
-
-感谢以下项目和公司的支持：
-- [百聆语音对话机器人](https://github.com/wwbin2017/bailing)
-- [十方融海](https://www.tenclass.com/)
-- [玄凤科技](https://github.com/Eric0308)
-- [汇远设计](http://ui.kwd988.net/)
-- [西安勤人信息科技](https://www.029app.com/)
