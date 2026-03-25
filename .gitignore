@@ -1,0 +1,159 @@
+# ==========================================
+# xiaozhi-server Git Ignore
+# ==========================================
+
+# ---------------
+# Python 相关
+# ---------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ---------------
+# 虚拟环境
+# ---------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ---------------
+# 测试和覆盖率
+# ---------------
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# ---------------
+# IDE 和编辑器
+# ---------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+.spyderproject
+.spyproject
+.ropeproject
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+.history/
+.cursor/
+
+# ---------------
+# 配置文件（含密钥）
+# ---------------
+# 注意：config.yaml 是模板配置文件，需要提交
+# 用户自定义配置不要提交
+data/.config.yaml
+.config.yaml
+.secrets.yaml
+.private_config.yaml
+.env.development
+.env.local
+
+# ---------------
+# 数据和临时文件
+# ---------------
+data/
+tmp/
+temp/
+*.log
+logs/
+
+# ---------------
+# 模型文件（大文件）
+# ---------------
+models/
+!models/.gitkeep
+asr-models/
+
+# Sherpa ONNX 模型
+sherpa-onnx*/
+
+# SenseVoice 模型
+SenseVoiceSmall/
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# ---------------
+# 音频文件
+# ---------------
+music/
+!music/.gitkeep
+audio_ref/
+my_wakeup_words.mp3
+*.wav
+*.mp3
+*.opus
+*.p3
+
+# 保留配置中的必要音频文件
+!config/assets/bind_code.wav
+!config/assets/wakeup_words.wav
+!config/assets/bind_not_found.wav
+!config/assets/max_output_size.wav
+!config/assets/bind_code/*.wav
+!config/assets/tts_notify.mp3
+
+# ---------------
+# 操作系统文件
+# ---------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ---------------
+# 其他
+# ---------------
+*.pid
+*.seed
+*.pid.lock
+.mysql/
+uploadfile/
